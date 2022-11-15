@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,900&display=swap');
+
+@keyframes plates_in {
+  from { transform: translateY(0); }
+  to { transform: translateY(-25px); }
+}
+
+@keyframes plates_out {
+  from { transform: translateY(-25px); }
+  to { transform: translateY(0); }
+}
+
+@keyframes loading {
+  from { transform: rotate(0deg); }
+  to { transform:rotate(360deg); }
+}
+
+@keyframes error_in{
+  from {
+  height: 0px;
+}
+  to {
+    height: 40px;
+  }
+}
+
+@keyframes error_out{
+  from {
+    height: 40px;
+  }
+  to {
+    height: 0px;
+  }
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.notFound{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 650px;
+}
+
+.loading__item {
+  display: flex;
+  cursor: pointer;
+  font-size: 55px;
+  width: 100px;
+  height: 100px;
+  animation: loading 2s infinite ease;
+  filter: drop-shadow(-5px 3px 10px rgba(0,0,0,0.1));
+}
+
+.loading__desc{
+  position: absolute;
+  display: flex;
+  height: 240px;
+  text-align: center;
+  align-items: flex-end;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  transform: translateY(0);
+  color:rgba(0,0,0,0);
+  animation: plates_out 1s linear;
+  transform: translateY(0px);
+  filter: drop-shadow(-5px 3px 10px rgba(0,0,0,0.2));
+}
+
+.loading__desc:hover{
+  display: flex;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  transform: translateY(-25px);
+  color: rgba(204,73,0, 1);
+  animation: plates_in 1s linear;
+  transform: translateY(-25px);
+  filter: drop-shadow(-5px 3px 10px rgba(0,0,0,0.2));
+}
+
+.back__anim{
+  cursor: pointer;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+  padding-right: 100px;
+  padding-left: 100px;
+  height: 0px;
+  background-color: rgba(0,0,0, 0.5);
+  animation: error_out 1s linear;
+}
+
+.back__anim:hover{
+  height: 40px;
+  animation: error_in 1s linear;
+}
+
+.solid{
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  animation: plates_out 1s linear;
+  transform: translateY(0);
+  color: #7795FF;
+  filter: drop-shadow(-5px 3px 10px rgba(0,0,0,0.2));
+}

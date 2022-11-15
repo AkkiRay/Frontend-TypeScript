@@ -1,0 +1,54 @@
+html, body {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  min-width: 1280px;
+  -webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width:1199px) {
+
+  html, body {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    min-width: 1280px;
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+  }
+
+  .container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .aviaCard {
+    display: flex;
+    width: 980px;
+    height: 200px;
+    box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+    border-radius: 15px;
+    background-color: #fff;
+  }
+
+}

@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+
+html, body {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  min-width: 1280px;
+  -webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.aviaCard {
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+  height: 200px;
+  box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+  border-radius: 15px;
+  background-color: #fff;
+  margin-top: 50px;
+}
+
+.aviaCard__Double{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  width: 980px;
+  height: 330px;
+  box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+  border-radius: 15px;
+  background-color: #fff;
+  margin-top: 50px;
+}
+
+.aviaInfo__Down {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 658px;
+  height: 100%;
+  border-top: 1px dashed #5C87DB;
+}
+
+.aviaInfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 658px;
+  height: 100%;
+}
+
+.startData__timeStart{
+  display: flex;
+  padding-bottom: 10px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+
+  color: #232323;
+}
+
+.startData_City {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+
+  color: #5C5C5C;
+}
+
+.startData_CityDate {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+
+  color: #5C5C5C;
+}
+
+.aviaInfo__startData {
+  display: flex;
+  flex-flow: column;
+  width: 110px;
+}
+
+.aviaInfo__endData{
+  display: flex;
+  flex-flow: column;
+  width: 140px;
+  padding-left: 20px;
+}
+
+.aviaInfo__inTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 269px;
+}
+
+.inTime__firstCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  text-align: center;
+
+  color: #B7BAC1;
+}
+
+.inTime__secondCont {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+.secondCont__Line {
+  display: flex;
+  width: 278px;
+  height: 8px;
+  padding-bottom: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  background: url('../assets/line.svg') no-repeat;
+  text-align: center;
+  color: #B7BAC1;
+}
+
+.secondCont__Timer {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  text-align: center;
+
+  color: #B7BAC1;
+}
+
+.aviaInfo__Bagage {
+  display: flex;
+  width: 50px;
+  height: 100px;
+  margin: 0 auto auto;
+  margin-left: 0;
+  margin-right: 0;
+  background: url('../assets/bagage.svg') no-repeat;
+}
+
+.aviaBlock{
+  display: flex;
+  height: 165px;
+}
+
+.aviaCost_double {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 100%;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  /* identical to box height */
+  border-left: 1px solid #DDE3EE;
+
+  text-align: center;
+
+  color: #232323;
+}
+
+.aviaCost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 100%;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  /* identical to box height */
+  border-left: 1px solid #DDE3EE;
+
+  text-align: center;
+
+  color: #232323;
+}
+
+.aviaName__card{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding-top: 40px;
+}
+
+.card__logo {
+  width: 39px;
+  height: 39px;
+  background: url('../assets/avia_logo.svg') no-repeat;
+}
+
+.card__text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding-top: 8px;
+
+  color: #5C5C5C;
+}
+
+.aviaName__type{
+  display: flex;
+  width: 132px;
+  height: 26px;
+
+  justify-content: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+  background: #8BA5D8;
+  border-radius: 15px 0px;
+}
+
+.aviaName {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
+  width: 132px;
+  height: 100%;
+}
+
+.aviaInfo_ticket{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
